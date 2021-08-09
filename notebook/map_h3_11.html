@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_644e3a7cdad04821b1cfebf92055177e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_644e3a7cdad04821b1cfebf92055177e" ></div>
+        
+</body>
+<script>    
+    
+            var map_644e3a7cdad04821b1cfebf92055177e = L.map(
+                "map_644e3a7cdad04821b1cfebf92055177e",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1bede9aef29241558894fcbcf99846e0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            var polygon_d36906a3319a4665b8cd660330c80ed1 = L.polygon(
+                [[51.16769282376505, 6.839700553909991], [51.167459592932396, 6.839739584175095], [51.167383527536934, 6.8400992595731465], [51.16754069288607, 6.840419907052807], [51.16777392414364, 6.840380878902874], [51.167849989627186, 6.840021201158116]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_d36906a3319a4665b8cd660330c80ed1.bindTooltip(
+                `<div>
+                     5433 points <br>Rheinhöfe Kranhaus, 31a, Reisholzer Werftstraße, Holthausen, Stadtbezirk 9, Düsseldorf, Nordrhein-Westfalen, 40589, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_54bf407437aa4070a37dd66fc655c6d6 = L.polygon(
+                [[51.16831140588922, 6.838903134618597], [51.16807817798758, 6.838942167770299], [51.168002116549154, 6.83930184559181], [51.1681592829243, 6.839622492608387], [51.16839251125085, 6.839583461571881], [51.16846857277735, 6.839223781403608]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_54bf407437aa4070a37dd66fc655c6d6.bindTooltip(
+                `<div>
+                     12036 points <br>23, Reisholzer Werftstraße, Holthausen, Stadtbezirk 9, Düsseldorf, Nordrhein-Westfalen, 40589, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_af0ee014ae314a1aa2919cb5a99bceb9 = L.polygon(
+                [[1.518986162191612, 103.78442601768933], [1.5192529003821542, 103.78436152484234], [1.5193260459463633, 103.78409657077204], [1.519132452867623, 103.7838961097238], [1.5188657145869207, 103.78396060306672], [1.518792569475116, 103.78422555696194]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_af0ee014ae314a1aa2919cb5a99bceb9.bindTooltip(
+                `<div>
+                     6085 points <br>Jalan Molek 3/20, Taman Molek, Johor Bahru, Iskandar Malaysia, Johor, 80150, Malaysia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_a997a78b5b67451795cc3f9fb2b410c0 = L.polygon(
+                [[1.5180655024317853, 103.7841540823475], [1.5183322393689889, 103.78408958937858], [1.5184053840283929, 103.78382463565843], [1.518211791298182, 103.78362417508231], [1.517945054270835, 103.78368866854717], [1.5178719100638365, 103.78395362209223]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_a997a78b5b67451795cc3f9fb2b410c0.bindTooltip(
+                `<div>
+                     14118 points <br>Jalan Persiaran Bumi Hijau, Taman Molek, Johor Bahru, Iskandar Malaysia, Johor, 80150, Malaysia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_7d04d7d056e54760bcae429b308e4ae2 = L.polygon(
+                [[1.6022759132986215, 103.6838851884138], [1.602542837744804, 103.68382056700811], [1.602616070218436, 103.68355539961878], [1.6024223777971944, 103.68335485381276], [1.602155453263405, 103.68341947571314], [1.6020822212384562, 103.68368464292485]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_7d04d7d056e54760bcae429b308e4ae2.bindTooltip(
+                `<div>
+                     3985 points <br>Johor Bahru, Iskandar Malaysia, Johor, 81400, Malaysia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_4d28fd344dd04d27a3c9fa8b1681efb5 = L.polygon(
+                [[51.34797162273188, 6.839329386121978], [51.34773900878572, 6.839368520874992], [51.34766333269289, 6.839729147876481], [51.34782027045494, 6.840050642484148], [51.34805288482338, 6.84001150985752], [51.34812856100751, 6.839650880496857]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_4d28fd344dd04d27a3c9fa8b1681efb5.bindTooltip(
+                `<div>
+                     1067 points <br>117, Breitscheider Weg, Lintorf, Lintorf/Breitscheid, Ratingen, Kreis Mettmann, Nordrhein-Westfalen, 40885, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_8e69726e7ae74e0897795a3a65703b0b = L.polygon(
+                [[37.3786860084326, -121.94041537839841], [37.378926678548765, -121.94026134753472], [37.379143554181034, -121.94044016704238], [37.37911975921636, -121.94077301742381], [37.378879089082105, -121.94092704690196], [37.37866221393062, -121.94074822738422]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_8e69726e7ae74e0897795a3a65703b0b.bindTooltip(
+                `<div>
+                     7044 points <br>3120, De La Cruz Boulevard, Santa Clara, Santa Clara County, California, 95054, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_b681917836f94c4895031ad7b3600d6c = L.polygon(
+                [[51.2670781315491, 6.78516448625507], [51.26684529634741, 6.7852037468429325], [51.26676962450045, 6.785563889096944], [51.266926787767055, 6.785884773119239], [51.26715962339346, 6.785845514649986], [51.267235295328504, 6.78548537003979]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_b681917836f94c4895031ad7b3600d6c.bindTooltip(
+                `<div>
+                     5896 points <br>89, Wilseder Weg, Unterrath, Stadtbezirk 6, Düsseldorf, Nordrhein-Westfalen, 40468, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_321ebb5831ef45bead23d8f6bc3ae69a = L.polygon(
+                [[1.6236931815499167, 103.67127625496242], [1.623960145854529, 103.67121161528587], [1.6240333998927254, 103.67094641235194], [1.6238396891781715, 103.67074584927256], [1.6235727247861431, 103.67081048944374], [1.623499471196085, 103.67107569219968]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_321ebb5831ef45bead23d8f6bc3ae69a.bindTooltip(
+                `<div>
+                     1246 points <br>Kulai, Iskandar Malaysia, Johor, 81000, Malaysia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_f03ad2560229453b84e575367adf1347 = L.polygon(
+                [[1.6014751426214218, 103.68407905188253], [1.601742065736919, 103.68401443085101], [1.6018152974137967, 103.68374926439081], [1.6016216055264876, 103.68354871913978], [1.6013546823233953, 103.68361334066601], [1.6012814510952045, 103.68387850694857]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_f03ad2560229453b84e575367adf1347.bindTooltip(
+                `<div>
+                     1507 points <br>Johor Bahru, Iskandar Malaysia, Johor, 81400, Malaysia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_0328f98650c44e1383c7f7cc3b2f006e = L.polygon(
+                [[1.5605825074516553, 103.82852147851689], [1.5608492832769008, 103.8284570267382], [1.5609224682904426, 103.82819210337034], [1.560728877025158, 103.8279916319552], [1.5604621011076807, 103.8280560842306], [1.5603889165477216, 103.8283210074244]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_0328f98650c44e1383c7f7cc3b2f006e.bindTooltip(
+                `<div>
+                     1026 points <br>Taman Perindustrian Cemerlang, Taman Desa Cemerlang, Johor Bahru, Iskandar Malaysia, Johor, 81800, Malaysia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_2529783764d14ed6af7a2bd22ad3338b = L.polygon(
+                [[1.572740099213985, 103.65194105753137], [1.5730069972217278, 103.6518764064183], [1.5730802018715024, 103.65161121700592], [1.5728865080657033, 103.65141067888504], [1.57261960997185, 103.65147533049227], [1.5725464057699037, 103.65174051972626]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_2529783764d14ed6af7a2bd22ad3338b.bindTooltip(
+                `<div>
+                     1161 points <br>Taman Teknologi Johor, Kulai, Iskandar Puteri, Kulai, Iskandar Malaysia, Johor, 81000, Malaysia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_aca2ceeb205b4b2ab380d4090580d5ed = L.polygon(
+                [[14.128647070665652, 121.13003943087108], [14.12838922827715, 121.13008855835038], [14.12831359809737, 121.13033859774814], [14.128495810851772, 121.13053951020785], [14.128753653747935, 121.13049038266627], [14.128829283382025, 121.1302403427272]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_aca2ceeb205b4b2ab380d4090580d5ed.bindTooltip(
+                `<div>
+                     1828 points <br>H. Y. Dimacali Avenue, First Philippine Industrial Park, Santa Anastacia, Santo Tomas, Batangas, Calabarzon, 4234, Philippines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_d82470dc6adc439c89f771e3d15af0b3 = L.polygon(
+                [[48.043495911785755, 16.301518645054486], [48.04324562767767, 16.301525949370554], [48.04313251362769, 16.301872361511418], [48.04326968336076, 16.302211470904755], [48.04351996765765, 16.30220416883184], [48.043633082032656, 16.301857755122416]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_d82470dc6adc439c89f771e3d15af0b3.bindTooltip(
+                `<div>
+                     5193 points <br>Am Kanal, Gemeinde Gumpoldskirchen, Bezirk Mödling, Niederösterreich, 2352, Österreich
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_88f18cd54a284e80913a106483d00d3a = L.polygon(
+                [[37.664615098184605, -122.3821063316617], [37.66485561417418, -122.38195332953349], [37.66507088168381, -122.38213304887444], [37.665045632726304, -122.38246577032479], [37.66480511673294, -122.38261877104209], [37.664589849700874, -122.38243905171993]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_88f18cd54a284e80913a106483d00d3a.bindTooltip(
+                `<div>
+                     3474 points <br>Oyster Point Boulevard, South San Francisco, San Mateo County, California, 94083, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_e8dbf81e1c8744e8a9ec9189f84b2896 = L.polygon(
+                [[37.66552666349001, -122.3821597663164], [37.66576717826032, -122.3820067630253], [37.665982443603134, -122.38218648398761], [37.66595719369812, -122.38251920822226], [37.66571667892403, -122.38267221010243], [37.66550141405873, -122.3824924891589]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_e8dbf81e1c8744e8a9ec9189f84b2896.bindTooltip(
+                `<div>
+                     1066 points <br>Oyster Point Boulevard, South San Francisco, San Mateo County, California, 94083, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_dcdf187f3e8d4c948126478f67cd575d = L.polygon(
+                [[37.540939712520334, -122.06112853256614], [37.54118022841956, -122.06097465754067], [37.54139647997397, -122.06115386836444], [37.541372215150304, -122.06148695421595], [37.54113169923708, -122.06164082784674], [37.5409154481615, -122.06146161702073]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_dcdf187f3e8d4c948126478f67cd575d.bindTooltip(
+                `<div>
+                     4254 points <br>7333;7373, Gateway Boulevard, Newark, Alameda County, California, 94555, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_da93e1faf177448da459a3b4b47792cb = L.polygon(
+                [[51.60146310410703, 5.01573157870171], [51.60123334086634, 5.015776625319914], [51.60116421725834, 5.016136415303806], [51.60132485685553, 5.016451161127923], [51.60155462055525, 5.016406116555083], [51.601623744198754, 5.016046324112737]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_da93e1faf177448da459a3b4b47792cb.bindTooltip(
+                `<div>
+                     1480 points <br>Tesla #3, Dongenseweg, Vossenberg West I, Vossenberg, Tilburg, Noord-Brabant, Nederland, 5047TK, Nederland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_394db120b9bb4a068869d00dd7349294 = L.polygon(
+                [[35.67470247589357, 139.8149457004078], [35.67495315252921, 139.8148650663297], [35.6750208644814, 139.8145813715711], [35.67483790017922, 139.81437831286254], [35.674587224624474, 139.8144589479583], [35.674519512291006, 139.81474264074498]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_394db120b9bb4a068869d00dd7349294.bindTooltip(
+                `<div>
+                     2930 points <br>ホテルイースト21東京, イースト21プラザ, 東陽六丁目, 江東区, 東京都, 日本
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_32c29f3b795b4e458bd3a5ba7efeffc7 = L.polygon(
+                [[46.85377665862242, 9.515761280617356], [46.85352716998632, 9.515789934955516], [46.85343346076573, 9.516131010099848], [46.85358924006427, 9.516443432863003], [46.853838729113875, 9.516414780513902], [46.853932438451444, 9.516073703412596]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_32c29f3b795b4e458bd3a5ba7efeffc7.bindTooltip(
+                `<div>
+                     1888 points <br>32, Ringstrasse, Industriezone Industriestrasse, Chur, Plessur, Graubünden/Grischun/Grigioni, 7004, Schweiz/Suisse/Svizzera/Svizra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_ab879cb49254410d8e848a62c6dacbec = L.polygon(
+                [[35.772227550243265, 140.38237702369327], [35.77247947830286, 140.38229762986822], [35.77254860597312, 140.38201208121257], [35.7723658059439, 140.38180592836707], [35.77211387895625, 140.3818853232481], [35.77204475092584, 140.3821708699187]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_ab879cb49254410d8e848a62c6dacbec.bindTooltip(
+                `<div>
+                     1282 points <br>古込, 成田市, 千葉県, 282-0004, 日本
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_d1d4dac1553b4273b9147b94f051cda6 = L.polygon(
+                [[50.04841926914673, 8.561590010575376], [50.04818059042222, 8.561622982274848], [50.04809648302925, 8.561978445773553], [50.04825105423525, 8.562300939758927], [50.04848973335795, 8.562267970187214], [50.04857384087648, 8.561912504502352]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_d1d4dac1553b4273b9147b94f051cda6.bindTooltip(
+                `<div>
+                     2518 points <br>Gebäude 322, Flughafen Lufthansabasis (Richtung Ost), Flughafen, Süd, Frankfurt am Main, Hessen, 60549, Deutschland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_546dede3c58246b7b0ce655f2ba2d479 = L.polygon(
+                [[19.0590323988486, -98.28482103227438], [19.05925556004551, -98.28464356279432], [19.059510470010245, -98.28475535115065], [19.059542218582664, -98.28504461002227], [19.05931905667541, -98.28522207957688], [19.059064146906074, -98.28511029018534]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_546dede3c58246b7b0ce655f2ba2d479.bindTooltip(
+                `<div>
+                     6202 points <br>San Andrés Cholula, Puebla, 72810|, México
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_983867705a4d4968bdf77412837a6737 = L.polygon(
+                [[19.28935577977188, -99.53614457786429], [19.289580908756392, -99.5359678800002], [19.289836102660605, -99.53608305547063], [19.289866167343966, -99.53637492980788], [19.28964103765957, -99.53655162768183], [19.28938584399171, -99.53643645120867]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_983867705a4d4968bdf77412837a6737.bindTooltip(
+                `<div>
+                     1170 points <br>Circuito Industria Sur, Lerma de Villada, Lerma, Estado de México, 52105, México
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_34cab3d0325741ec98bd0196a536d76a = L.polygon(
+                [[19.463116050111992, -99.23685389996184], [19.46334078900501, -99.2366766866207], [19.463596184430337, -99.23679126243466], [19.463626840739305, -99.23708305260423], [19.463402101147153, -99.23726026597095], [19.463146705945167, -99.23714568914254]],
+                {"bubblingMouseEvents": true, "color": "#ff0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb934", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.4, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_644e3a7cdad04821b1cfebf92055177e);
+        
+    
+            polygon_34cab3d0325741ec98bd0196a536d76a.bindTooltip(
+                `<div>
+                     1076 points <br>Calle Ferrocarriles a Acambaro, Naucalpan, Naucalpan de Juárez, Estado de México, 53530, México
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            map_644e3a7cdad04821b1cfebf92055177e.fitBounds(
+                [[-46.6421, -179.7408], [61.19757, 179.55195]],
+                {}
+            );
+        
+</script>
